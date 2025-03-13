@@ -64,8 +64,7 @@ The `variables.tf` file is used to make the Terraform templates reusable and imp
 
 1. Replace the `billing_account` id in  `variables.tf` to your own. 
 
-2. Initialize Terraform. This command downloads the required provider plugins, initializes the backend, and sets up the `.terraform` directory. It also creates a `terraform.tfstate` file, which tracks the infrastructure state to manage and apply changes effectively.
-:
+2. Initialize Terraform. This command downloads the required provider plugins, initializes the backend, and sets up the `.terraform` directory.
    ```sh
    terraform init
    ```
@@ -73,8 +72,7 @@ The `variables.tf` file is used to make the Terraform templates reusable and imp
    ```sh
    terraform plan
    ```
-4. Apply the configuration. After running this command the project, and datasets should be visible in the google cloud platform.
-:
+4. Apply the configuration. After running this command the project, and datasets should be visible in the google cloud platform. This also creates a `terraform.tfstate` file, which tracks the infrastructure state to manage and apply changes effectively:
    ```sh
    terraform apply
    ```
